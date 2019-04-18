@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html> 
+<html lang="en">
+<!--
+    Name: Steve Dunbar
+    Date Created: 3/12/2019 
+    Most recent revision:  Assessment 3 v1
+-->
+<head>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>ContactUs</title>	
+		  <noscript>
+      <div style="border: 1px solid purple; padding: 10px">
+        <span style="color:red">This site is best viewed with JavaScript enabled</span>  <!-- JavaScript warning style -->
+      </div>
+    </noscript>
+		<script type="text/JavaScript" src="restaurantContactUs.js"></script>
+
+		 <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+		<link href="styles/restaurantStyles3.css" rel="stylesheet" type="text/css" />  <!-- uniform styles on site -->
+		<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">  <!-- special font for Lakeview cafe -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <!-- icon for home button -->
+		<style>
+		body {
+			background-color: #f1e3dd;
+			}
+			input[type=text] {
+  width: 50%;
+  margin: 4px 0;
+}
+	input[type=textarea] {
+  margin: 4px 0;
+}
+		input[type=radio] {
+  margin: 4px 0;
+}
+		input[type=checkbox] {
+  margin: 4px 0;
+}
+		</style>
+</head>
+<body>
+   <!-- <noscript>
+      <div style="border: 1px solid purple; padding: 10px">
+        <span style="color:red">This site is best viewed with JavaScript enabled</span>
+      </div> -->
+    </noscript>
+	<div class="container-fluid"> <!-- All page content should be inside this .container div -->
+
+	<header>
+	<h1>Lakeview Cafe</h1>
+	</header>
+
+	<nav>
+		<div class="clear-float" </div>
+			<p><a class="btn fa fa-home" href="HomePage3.html"></a></p>
+			<!-- <p><a class="btn badge-md" href="HomePage3.html">Home</a></p> -->
+			<p><a class="btn badge-md" href="Menu3.html">Menu</a></p>
+			<p><a class="btn badge-md" href="ContactUs3.html">Contact Us</a></p>
+		<div class="clear-float" </div>
+	</nav>
+
+	<section>
+	<article id="Menu">
+		<div>
+		<form name="restContact" onsubmit="return validateForm()"; 
+          onreset="resetForm()">
+		  <form class="form-horizontal">
+			<div class="form-inline">
+                <label for="Name">Name:</label>
+                <input type="text" class="form-inline" id="name" name="Name">
+            </div>
+			<div class="form-inline">
+                <label for="email">eMail:</label>
+                <input type="text" class="form-inline" id="email" name="email">
+            </div>
+			<div class="form-inline">
+                <label for="phone">Phone:</label>
+                <input type="text" class="form-inline" id="phone" name="phone">
+            </div>
+			<div class="form-inline">
+				<label for="inquiry1">Reason for Inquiry:</label>
+				<select class="form-control" id="inquiry1">
+				<option>Catering</option>
+				<option>Private Party</option>
+				<option>Feedback</option>
+				<option>Other</option>
+				</select>
+			</div>
+			<div class="form-inline">
+			<label for="comment">Additional Information:</label>
+			<textarea class="form-control" rows="3" id="comment"></textarea>
+			</div>
+
+			<div class="form-inline">
+			<label class="radio-inline">
+			<label for="visited1">Have you been to the restaurant: </label>
+			<input type="radio" name="visited1" checked>No  
+			</label>
+			 <label class="radio-inline">
+		   <input type="radio" name="visited1">Yes  
+			</label>
+			</div>
+
+		<div class="form-inline">
+			<label class="checkbox-inline">
+			<label>Best day to contact you:</label> 
+			<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" name="contactDay" id="inlineCheckbox1" value="1">
+  <label class="form-check-label" for="inlineCheckbox1">Monday</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" name="contactDay" id="inlineCheckbox2" value="2">
+  <label class="form-check-label" for="inlineCheckbox2">Tuesday</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" name="contactDay" id="inlineCheckbox3" value="3">
+  <label class="form-check-label" for="inlineCheckbox3">Wednesday</label>
+  <div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" name="contactDay" id="inlineCheckbox4" value="4">
+  <label class="form-check-label" for="inlineCheckbox2">Thursday</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" name="contactDay" id="inlineCheckbox5" value="5">
+  <label class="form-check-label" for="inlineCheckbox3">Friday</label>
+</div 
+<div class="float-left"></div>
+
+</div>
+<div class="col-md-3 text-center"> 
+		<button type="submit" id="submitButton" class="btn btn-default">Send Request</button>
+         <!--   <button type="reset" id="resetButton" class="btn">Reset</button> form clear button left in for easy add -->
+		 </div>
+		</form>
+		
+
+
+
+
+			</div>
+				</article>
+	</section>
+
+		<footer>
+		<p>1265 Page Mill Road, West Dillion, Texas 12211</p>
+		<p>406-555-1212</p>
+		<p>&copy; 2019 Lakeview Cafe LLC</p>
+		</footer>
+
+	</div><!-- End of .container div -->
+
+	    <!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+	<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> -->
+</body>
+</html>

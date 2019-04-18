@@ -1,0 +1,63 @@
+﻿/*
+Creator:  S. Dunbar
+Date Created:  03/01/2019
+Date last modified:
+*/
+header {
+	background-color: #667292;
+	color: #fef9ff;
+	height: 100px;
+	text-align: center;
+	font-family: 'Courgette', cursive;
+	font-size: 18px;
+	padding: 20px 10px 20px 10px; 
+}
+footer {
+	background-color: #667292;
+	color: #fef9ff;
+	height: 100px;
+	text-align: center;
+	padding: 10px 10px 10px 10px; 
+}
+h1 {
+	font-size: 2.5em;
+}
+nav {
+	border-top: 3px dashed #8d9db6;
+	border-bottom: 3px dashed #8d9db6;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+nav a {
+	background-color: #8d9db6;
+	color: #fef9ff;
+	padding: 8px;
+	border: thin solid #0d1f2d;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	margin: 20px;
+	width: 100px;
+	float: left;
+}
+nav a:visited {
+	color: #f1e3dd; 
+}
+nav a:hover {
+	background-color: #fef9ff;
+	color: #5b7d87;
+}
+nav a:active {
+	font-weight: bold;
+}
+		.clear-float {
+	clear:both;
+	}
+body
+{
+background-color: #fef9ff;
+font-family: arial, helvetica, sans-serif;
+color: #0d1f2d;
+max-width: 1500px;
+margin: 20 auto;
+}

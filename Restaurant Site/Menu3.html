@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html> 
+<html lang="en">
+<!--
+    Name: Steve Dunbar
+    Date Created: 3/12/2019 
+    Most recent revision:  Assessment 3 v1
+-->
+<head>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>Menu</title>	
+
+		<!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+		<link href="styles/restaurantStyles3.css" rel="stylesheet" type="text/css" />  <!-- uniform styles on site -->
+		<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">  <!-- special font for Lakeview cafe -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   <!-- icon for home button -->
+		<style>
+		body {
+			background-color: #f1e3dd;
+			}
+		table {
+			width: 80%;
+		}
+		th {
+			text-align: center;
+			font-size: 125%;
+			padding: 20px 0px 6px 0px;
+		}
+		td {
+			text-align: center;
+		}
+		table#beverage {
+			text-align: center;
+			padding: 0px 0px 6px 0px;
+			width: 80%;
+		}
+		 table.beverage tr:nth-child(even) {   background: #bccad6; /* Stripped format for beverage table -- part of second assignment */
+		}
+		  table.beverage td {padding: 10px 0px 0px 0px; 
+		 } 
+		</style>
+</head>
+<body>
+	<div class="container-fluid"> <!-- All page content should be inside this .container div -->
+	
+	<header>
+	<h1>Lakeview Cafe</h1>
+	</header>
+
+	<nav>
+		<div class="clear-float" </div>
+			<p><a class="btn fa fa-home" href="HomePage3.html"></a></p>
+			<!-- <p><a class="btn badge-md" href="HomePage3.html">Home</a></p> -->
+			<p><a class="btn badge-md" href="Menu3.html">Menu</a></p>
+			<p><a class="btn badge-md" href="ContactUs3.html">Contact Us</a></p>
+		<div class="clear-float" </div>
+	</nav>
+	<section>
+	<article id="Menu">
+			 <div class="table-responsive">
+			<table class="table">
+			<div class="col-sm">
+			<div class="col-sm">
+			<div class="col-sm">
+				<thead>
+					 <tr>
+					<th>Burger and Fries</th>
+					<th>Hot Dog and Chips</th>
+					<th>Italian Sausage and Peppers</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+				<td>An American Classic!</td>
+				<td>A Summer Classic!</td>
+				<td>An All-Time Favorite!</td>
+				</tr>
+			 <tr>
+			   <td>Your choice-with or without cheese</td>
+			   <td>Your choice-white or wheat bun</td>
+				  <td>Your choice-mild or spicy cole slaw</td>
+			   </tr>
+				<tr>
+					<td>Pickle, onion, tomato, and lettuce</td>
+					<td>Relish, mustard, and ketchup</td>
+					<td>Served with garlic masher</td>
+				</tr>
+				<tr>
+					<td>Served with our famous thick-cut french fries</td>
+					<td>Served with our house-made chips</td>
+					<td>$10.95</td>
+				</tr>
+				<tr>
+					<td>$7.95</td>
+					<td>$7.95</td>
+					<td></td>
+		</tr>
+		</tbody>
+		</div>
+		</div>
+		</div>
+		</table>
+		 <div class="table-responsive">
+			<table class="table">
+			<div class="col-sm">
+			<div class="col-sm">
+			<div class="col-sm">
+				<thead>
+					 <tr>
+					<th>Tenderloin Sandwich and Chips</th>
+					<th>House Salad</th>
+					<th>Brisket Sandwich and Fries</th>
+					</tr>
+			</thead>
+				<tbody>
+					<tr>
+				<td>Really hits the Spot!</td>
+				<td>On the Lighter Side</td>
+				<td>A Taste or Texas!</td>
+				</tr>
+        <tr>
+          <td>Plain or Sesame Seed bun</td>
+          <td>Your Choice-with or without cheese</td>
+		  <td>Smoked Brisket on thick-cut Texas Toast</td>
+        </tr>
+		<tr>
+			<td>Pickle, onion, tomato, and lettuce</td>
+			<td>Iceberg lettuce, tomatoes, peppers</td>
+			<td>Cole Slaw</td>
+		</tr>
+		<tr>
+			<td>Served with our house-made chips</td>
+			<td>Thousand Island or Ranch Dressing</td>
+			<td>Served with our famous thick-cut french fries</td>
+		</tr>
+		<tr>
+			<td>$8.95</td>
+			<td>Served with a dinner roll</td>
+			<td>$7.95</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>$6.95</td>
+			<td></td>
+		</tr>
+		</tbody>
+		</div>
+		</div>
+		</div>
+		</table>
+		<div class="table-responsive">
+			<table class="table">
+			<table id="beverage">
+			<div class="col-2">
+			<thead>
+			<tr>
+					<th colspan="2" style="text-align: center;">Beverages</th>
+			</tr>
+			</thead>
+			<tbody>
+					<tr>
+				<td>Root Beer</td>
+				<td>$3.00</td>
+				</tr>
+        <tr>
+          <td>Bottled Water</td>
+          <td>$1.25</td>
+        </tr>
+		<tr>
+			<td>Lemonade</td>
+			<td>$1.00</td>
+		</tr>
+		<tr>
+			<td>Ice Tea</td>
+			<td>$1.25</td>
+		</tr>
+		</tbody>
+		</div>
+		</div>
+		</div>
+				</table>
+			</div>
+				</article>
+	</section>
+
+		<footer>
+		<p>1265 Page Mill Road, West Dillion, Texas 12211</p>
+		<p>406-555-1212</p>
+		<p>&copy; 2019 Lakeview Cafe LLC</p>
+		</footer>
+
+	</div><!-- End of .container div -->
+
+	    <!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+	<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> -->
+</body>
+</html>
