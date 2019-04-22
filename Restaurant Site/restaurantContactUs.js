@@ -24,9 +24,7 @@ function validateForm() {
 	var email = document.forms["restContact"]["email"].value;
 	var phone = document.forms["restContact"]["phone"].value;
 	var inquiry1 = document.forms["restContact"]["inquiry1"].value;
-	var visited1 = document.forms["restContact"]["visited1"].value;
-	myCheckbox();
-	var contactDay1 = document.forms["restContact"]["contactDay"].value; 
+	var visited1 = document.forms["restContact"]["visited"].value;
 	if (name == "") {
     alert("Name must be filled out");
     return false;
@@ -39,43 +37,20 @@ function validateForm() {
     alert("Phone must be filled out");
     return false;
 	}
-	if (inquiry1 == "") {
-    alert("Inquiry must be selected");
-    return false;
-	}
-	if (visited1 == "") {
-    alert("Visited must be selected");
-    return false;
-	}
-	 
-function myCheckbox() {
-    
-//function myFunction() {
- // var x = document.getElementByName("contactDay").checked;
- // document.getElementById("demo").innerHTML = x;
-//  console.log("demo");
-//}
 
-  var i,
-  chks = document.getElementsByName("contactDay[]");
-  
-  for (i = 0; i < chks.length; i++){
-    if (chks[i].checked){
-        
-      alert("something checked") ;
-        
-        return true;
-    }else{
-        alert("No item selected");
-        return false;
-    }
-	}
-}
-	
-	//if (contactDay1 == "") {
-   // alert("Please select a preferred day for contact");
-   // return false;
-	//}
+	if (!document.getElementById("noVisit").checked && !document.getElementById("yesVisit").checked)
+            {alert("Please specify if you have visited the restaurant");
+            return false;}
+
+			var contactDay="Placeholder";
+		if (document.getElementById("contactDay1").checked) {var contactDay = "Monday";}
+		else if (document.getElementById("contactDay2").checked) {var contactDay = "Tuesday";} 
+		else if (document.getElementById("contactDay3").checked) {var contactDay = "Wednesday";} 
+		else if (document.getElementById("contactDay4").checked) {var contactDay = "Thursday";} 
+		else if (document.getElementById("contactDay5").checked) {var contactDay = "Friday";} 
+	else {alert("Please select a preferred contact day");
+	return false;} 
+
 	alert("Thank you for submitting your feedback.");
 	return false;
 	}
